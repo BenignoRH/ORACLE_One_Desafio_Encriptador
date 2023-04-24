@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio no.1 Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <img src="imagenes/alura.png" alt="aluralogo" class="logoizquierda">
+        <h1>Encriptador de texto con Javascript</h1>
+        <img src="imagenes/charro.png" alt="charro" class="logoderecha">
+    </header>
+
+    <main>
+        <section class="principal">
+            <div class="ingreso">
+                <form>
+                    <label for="ingresar" class="aviso">Ingrese el texto aquí</label>
+                    <textarea name="ingresar" id="textarea" cols="30" rows="10" autofocus></textarea>
+                    <label for="">&#9888 Solo letras minusculas y sin acentos</label>
+                    <input type="button" value="Encriptar" class="encriptar" onclick="encriptar()"></button>
+                    <input type="button" value="Desencriptar" class="desencriptar" onclick="desencriptar()"></button>
+                </form>
+            </div>
+    
+            <div class="salida" id="salidaid">
+                <div id="avatarmensajes">
+                <img src="imagenes/munheco.png" alt="noencontrado" class="avatar">
+                <p class="notexto">Ningún mensaje fue encontrado</p>
+                <p class="notextodos">Ingresa el texto que desees encriptar o desencriptar.</p>                  
+                </div>
+                <div id="mensajeencriptado">
+                    <form>
+                        <textarea name="textoencriptado" id="msg" cols="30" rows="10" class="encriptado"></textarea>
+                        <input type="button" id="copia" value="Copiar" class="copiar" onclick="copiar()"></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+            <p>Benigno Rico Hernández. Abril 2023.</p>
+    </footer>
+</body>
+</html>

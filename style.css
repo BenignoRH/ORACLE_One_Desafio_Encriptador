@@ -1,0 +1,224 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(28,232,230);
+    /*background: linear-gradient(180deg, rgba(28,232,230,0.958420868347339) 19%, rgba(7,194,232,1) 100%);*/
+    background: linear-gradient(rgba(28,232,230,0.958420868347339), rgba(7,194,232,1));
+}
+
+header {
+    background-color: #FEFEFE;
+    padding: 20px 0;
+    width: 940px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    background-color: #1ce8e6;
+}
+
+header h1{
+    text-align: center;
+    display: inline;
+}
+
+.logoizquierda{
+    width: 100px;
+    height: 50px;
+    /*float: left;*/
+}
+
+.logoderecha{
+    width: 100px;
+    height: 50px;
+    /*float: right;*/
+    
+}
+
+.principal{
+    padding: 3em 0;
+    background-color:transparent;
+    width: 940px;
+    margin: 0 auto; 
+}
+
+.ingreso{
+    width:600px;
+    background-color:transparent;
+    display: inline-block;
+}
+
+form{
+    margin: 5px 0;
+    display: inline-block;
+}
+.aviso{
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    color: navy;
+    text-align: left;
+}
+form label{
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+    font-style: italic;
+    /*margin: 0 0 10px;*/
+    text-align: center;
+}
+
+#textarea{
+    width: 540px;
+    height: 300px;
+    border: none;
+    border-style: double;
+    border-radius: 10px;
+    margin: 10px 5px 5px 5px;
+    padding: 10px;
+    resize: none;
+}
+
+.encriptar{
+    width: 25%;
+    margin: 10px 20px 10px 120px;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    background: lightgreen;
+    border:none;
+    border-radius: 15px;
+    transition: 1s all;
+    cursor:pointer;
+}
+
+.encriptar:hover{
+    color: white;
+    background: darkgreen;
+    transform: scale(1.1);
+}
+
+.desencriptar{
+    width: 25%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    background: lightgray;
+    border:none;
+    border-radius: 15px;
+    transition: 1s all;
+    cursor:pointer;
+}
+
+.desencriptar:hover{
+    color: white;
+    background: darkgray;
+    transform: scale(1.1);
+}
+
+
+
+.salida{
+    width: 300px;
+    height: 420px;
+    background-color: lightcyan;
+    display: inline-block;
+    margin-left: 5px;
+    padding: 10px;
+    vertical-align: top;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px lightgray;
+}
+
+.avatar{
+    width: 80%;
+    height: 50%;
+    padding: 30% 15% 0% 15%;
+    /*float: left;*/
+}
+
+#avatarmensajes{
+    background-color: lightcyan;
+}
+
+.notexto{
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.notextodos{
+    font-size: 14px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+footer{
+    text-align: center;
+    font-size: 10px;
+}
+
+
+#mensajeencriptado{
+    background-color: lightcyan;
+}
+
+#msg{
+    width: 240px;
+    height: 320px;
+    border: none;
+    border-style: double;
+    border-radius: 10px;
+    margin: 10px 5px 5px 20px;
+    padding: 10px;
+    resize: none;
+    display: none;
+    visibility: hidden;
+}
+
+.copiar{
+    width: 50%;
+    margin: 10px 50px 0px 80px;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    background:burlywood;
+    border:none;
+    border-radius: 15px;
+    transition: 1s all;
+    cursor:pointer;
+    vertical-align: bottom;
+    display: none;
+    visibility: hidden;
+}
+
+.copiar:hover{
+    color: white;
+    transform: scale(1.1);
+}
+
+/*Aquí inicia el CSS para adaptarse a resoluciones menores*/
+
+@media screen and (max-width:480px){
+
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video {
+        width: auto;
+    }
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
+
+}
+
